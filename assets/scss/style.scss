@@ -1,0 +1,33 @@
+.grid{
+    display: grid;
+}
+.bg-color-medium{
+    background-color: gray;
+}
+.bg-color-dark{
+    background-color: darkslategrey;
+}
+.calc{
+    grid-template-columns: repeat(auto-fill, 285px);
+    grid-template-areas: 
+                    "screen screen"
+                    "numbers operators";
+    .screen{
+        grid-area: screen;
+    }
+    .numbers{
+        grid-area: numbers;
+        grid-template-columns: repeat(3,95px);
+        grid-template-rows: repeat(5,65px);
+    }
+    .operators{
+        grid-area: operators;
+        grid-template-columns: 95px;
+        grid-template-rows: repeat(5,65px);
+    }
+}
+p{
+    font-size: 1.5em;
+    font-weight: 700;
+    text-align: center;
+}

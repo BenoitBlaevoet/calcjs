@@ -1,0 +1,48 @@
+/* line 1, ../../OneDrive/Documents/BeCode/calcjs/assets/scss/style.scss */
+.grid {
+  display: grid;
+}
+
+/* line 4, ../../OneDrive/Documents/BeCode/calcjs/assets/scss/style.scss */
+.bg-color-medium {
+  background-color: gray;
+}
+
+/* line 7, ../../OneDrive/Documents/BeCode/calcjs/assets/scss/style.scss */
+.bg-color-dark {
+  background-color: darkslategrey;
+}
+
+/* line 10, ../../OneDrive/Documents/BeCode/calcjs/assets/scss/style.scss */
+.calc {
+  grid-template-columns: repeat(auto-fill, 285px);
+  grid-template-areas: "screen screen" "numbers operators";
+}
+
+/* line 15, ../../OneDrive/Documents/BeCode/calcjs/assets/scss/style.scss */
+.calc .screen {
+  grid-area: screen;
+}
+
+/* line 18, ../../OneDrive/Documents/BeCode/calcjs/assets/scss/style.scss */
+.calc .numbers {
+  grid-area: numbers;
+  grid-template-columns: repeat(3, 95px);
+  grid-template-rows: repeat(5, 65px);
+}
+
+/* line 23, ../../OneDrive/Documents/BeCode/calcjs/assets/scss/style.scss */
+.calc .operators {
+  grid-area: operators;
+  grid-template-columns: 95px;
+  grid-template-rows: repeat(5, 65px);
+}
+
+/* line 29, ../../OneDrive/Documents/BeCode/calcjs/assets/scss/style.scss */
+p {
+  font-size: 1.5em;
+  font-weight: 700;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

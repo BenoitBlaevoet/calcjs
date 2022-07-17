@@ -21,6 +21,7 @@ class Calculator{
                 }
             default : 
                 this.value += dataValue;
+                //console.log(this.value);
                 break;
         }
         //console.log(dataValue);
@@ -35,8 +36,11 @@ class Calculator{
     }
     reset(){
         this.value = "";
+        //console.log(this.value);
         this.lastValue = "";
-        this.screen.value = " ";
+        //console.log(this.lastValue);
+        this.screen.value = "";
+        //console.log(this.screen.value);
         this.isfloat = false;
     }
 }
@@ -54,7 +58,7 @@ function setOnclickEvent() {
         let element = document.getElementById(`number-${i}`);
         let value = element.getAttribute(`data-value`);
         element.addEventListener("click", function(ev){
-            console.log(`value of the clicked button is : ${value}`);
+            //console.log(`value of the clicked button is : ${value}`);
             calc.buttonValue(value);
         });
     }
@@ -97,9 +101,6 @@ function ready(fn) {
 }
   
   // test
-window.ready(function() {
-    setOnclickEvent();
-});
-
-
-
+/*window.ready(function() {
+});*/
+setOnclickEvent();
